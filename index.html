@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRATEEK & CO.</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+  <div class="logo">
+    <img src="logo.png">
+    <h2>PRATEEK & CO.</h2>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#perfume">Perfumes</a></li>
+    <li><a href="#hair">Hair Care</a></li>
+    <li><a href="#face">Face Care</a></li>
+    <li><a href="#beard">Beard Care</a></li>
+    <li><a href="#gift">Gifts</a></li>
+  </ul>
+
+  <div class="nav-buttons">
+    <button class="order-btn" onclick="goToOrder()">Orders</button>
+    <div class="cart">
+      🛒 <span id="cart-count">0</span>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Elevate Your Grooming</h1>
+    <p>Luxury crafted for modern men</p>
+    <button onclick="scrollToSection('perfume')">Explore Now</button>
+  </div>
+</section>
+
+<!-- ================= PERFUME ================= -->
+
+<section id="perfume" class="section">
+<h2>Perfumes</h2>
+<div class="products">
+
+<div class="card">
+<img src="perfume.1.png">
+<h3>Noir</h3>
+<p>Bold & Luxurious</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="perfume.2.png">
+<h3>Destiny</h3>
+<p>Fresh Masculine</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="perfume.3.png">
+<h3>Citrus</h3>
+<p>Daily Energy</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+</div>
+</section>
+
+<!-- ================= HAIR ================= -->
+
+<section id="hair" class="section">
+<h2>Hair Care</h2>
+<div class="products">
+
+<div class="card">
+<img src="hair.1.png">
+<h3>Hair Oil</h3>
+<p>Strong & Thick Hair</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="hair.2.png">
+<h3>Hair Wax</h3>
+<p>Volume & Cooling</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="hair.3.png">
+<h3>Hair Gel</h3>
+<p>Style As You Wish</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+</div>
+</section>
+
+<!-- ================= FACE ================= -->
+
+<section id="face" class="section">
+<h2>Face Care</h2>
+<div class="products">
+
+<div class="card">
+<img src="facecare.1.png">
+<h3>Face Wash</h3>
+<p>Deep Clean</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="facecare.2.png">
+<h3>Scrub</h3>
+<p>Remove Dead Skin</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="facecare.3.png">
+<h3>Moisturizer</h3>
+<p>Hydrated Look</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+</div>
+</section>
+
+<!-- ================= BEARD ================= -->
+
+<section id="beard" class="section">
+<h2>Beard Care</h2>
+<div class="products">
+
+<div class="card">
+<img src="beard.1.png">
+<h3>Beard Oil</h3>
+<p>Smooth & Shiny</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="beard.2.png">
+<h3>Beard Wash</h3>
+<p>Fresh & Clean</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="beard.3.png">
+<h3>Beard Balm</h3>
+<p>Perfect Shape</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+</div>
+</section>
+
+<!-- ================= GIFT ================= -->
+
+<section id="gift" class="gift-section">
+<h2>Exclusive Grooming Kit</h2>
+<p class="offer">Flat 25% OFF for Selected Users</p>
+<p class="quote">"A well-groomed man is a silent statement of confidence."</p>
+<button onclick="addToCart()">Grab Offer</button>
+</section>
+
+<!-- ================= BLOG ================= -->
+
+<section class="blog">
+<h2>Men’s Grooming Blog</h2>
+<p>"Style is a reflection of your attitude and personality."</p>
+
+<textarea id="blogInput" placeholder="Write your thoughts about men's beauty..."></textarea>
+<button onclick="submitBlog()">Submit</button>
+
+<div id="blogPosts"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
